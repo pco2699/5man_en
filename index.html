@@ -1,0 +1,71 @@
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W2F7ZVT');</script>
+    <!-- End Google Tag Manager -->
+    <META http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="description" content="紳さんのペペロンチーノの点数の推移"/>
+    <meta name="keywords" content="LIG,紳さん,ペペロンチーノ"/>
+    <meta property="og:locale" content="ja_JP"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="紳さんのペペロンチーノの点数の推移"/>
+    <meta property="og:description" content="紳さんのペペロンチーノの点数の推移"/>
+    <meta property="og:url" content="https://htanaka0828.github.io/pprn/"/>
+    <meta property="og:site_name" content="pprn"/>
+    <title>紳さんのペペロンチーノの点数の推移</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/redmond/jquery-ui.css" type="text/css">
+
+</head>
+
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2F7ZVT"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div align="center">
+    <h1>ペペロン紳さんスコア</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">日付</div>
+        <div class="col-sm-10 form-inline" style="padding: 3px;">
+            <input type="text" class="form-control input-sm" id="date" placeholder="" size="20">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">点数</div>
+        <div class="col-sm-10 form-inline" style="padding: 3px;">
+            <input type="text" class="form-control input-sm" id="score" placeholder="" size="20">
+        </div>
+        <div id="btnarea" class="container">
+            <button id="setBtn" class="btn btn-primary">登録</button>
+            <button id="btn" class="btn btn-default">グラフ作成</button>
+            <table id="etable" class="table table-striped table-bordered table-condensed highchart"
+                   data-graph-container=".highchart-container" data-graph-type="line">
+
+                <canvas id="lineChart" height="450" style="width: 100%; height: 450px"></canvas>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
